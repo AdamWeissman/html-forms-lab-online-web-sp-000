@@ -8,7 +8,7 @@ RSpec.describe 'index.html' do
   end
 
   context 'within <form>' do
-    it 'contains a "text" type <input> tag with an id of "full name" and placeholder equal to "Enter Name" ' do
+    it 'contains a "text" type <input> tag with an id of "ownername" and placeholder equal to "Owner Name" ' do
       input = parsed_html.search('input')[0]
       expect(input).to_not be_nil, "No <input> tags were found"
       expect(input.attributes["type"]).to_not be_nil, "No type attribute was found on the first 'input' tag"
